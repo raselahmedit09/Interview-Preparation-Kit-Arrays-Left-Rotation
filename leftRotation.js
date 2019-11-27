@@ -26,6 +26,10 @@ function readLine() {
 
 // Complete the rotLeft function below.
 function rotLeft(a, d) {
+    
+    return [...a.slice(d, a.length), ...a.slice(0, d)];
+    
+    /*
     if(d % a.length == 0){
         return a;
     }
@@ -40,7 +44,8 @@ function rotLeft(a, d) {
    }
 
    return a;
-        
+    
+   */
 }
 
 function main() {
